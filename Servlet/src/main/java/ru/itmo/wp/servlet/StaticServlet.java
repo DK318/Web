@@ -16,7 +16,7 @@ public class StaticServlet extends HttpServlet {
             if (!uri.startsWith("/")) {
                 uri = "/" + uri;
             }
-            File file = new File("C:\\Users\\Home\\Desktop\\Сервлет\\src\\main\\webapp\\static" + uri);
+            File file = new File("/home/dk318/Web/Servlet/src/main/webapp/static/" + uri);
             if (!file.exists()) {
                 file = new File(getServletContext().getRealPath("/static" + uri));
             }
