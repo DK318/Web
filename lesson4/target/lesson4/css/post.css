@@ -1,0 +1,23 @@
+main article {
+    position: relative;
+    margin: 1rem 0;
+}
+
+main article .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 1.85rem;
+    color: var(--caption-color);
+}
+
+main article .information {
+    font-size: 0.85rem;
+    margin: 0.5rem 0;
+    color: var(--light-gray);
+}
+
+main article .body {
+    border-left: 4px solid var(--border-color);
+    padding-left: 1em;
+    font-size: 0.88rem;
+}

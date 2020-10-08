@@ -1,0 +1,30 @@
+.datatable {
+    position: relative;
+}
+
+.datatable .caption {
+    padding-left: 5px;
+    background-color: var(--table-border);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.datatable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable table, thead, th, td {
+    border: 1px solid var(--table-border);
+    text-align: center;
+}
+
+.datatable th, td {
+    font-size: 0.85rem;
+    height: 1.65rem;
+    width: 1.2rem;
+}
+
+.datatable tbody tr:nth-child(2n - 1) {
+    background-color: #F5F5F5;
+}

@@ -1,0 +1,43 @@
+.userBox {
+    position: relative;
+    border: var(--boder);
+    border-color: var(--border-color);
+    border-radius: var(--border-radius);
+    display: flow-root;
+    padding: 0.5rem;
+}
+
+.userBox .userPic {
+    float: right;
+}
+
+.userBox a {
+    font-size: 1.8rem;
+}
+
+.userBox li {
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.userBox ul {
+    list-style: none;
+}
+
+.userBox li::before {
+    content: "•";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    color: black;
+}
+
+.arrows {
+    font-size: 2.7rem;
+    color: var(--border-color);
+}
+
+.arrows a:visited, .arrows a {
+    text-decoration: none;
+    color: var(--caption-color);
+}
