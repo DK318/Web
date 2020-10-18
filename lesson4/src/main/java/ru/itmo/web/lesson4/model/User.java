@@ -1,7 +1,5 @@
 package ru.itmo.web.lesson4.model;
 
-import ru.itmo.web.lesson4.util.Color;
-
 public class User {
     private final long id;
     private final String handle;

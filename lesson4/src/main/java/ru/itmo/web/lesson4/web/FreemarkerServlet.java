@@ -45,11 +45,13 @@ public class FreemarkerServlet extends HttpServlet {
         try {
             template = cfg.getTemplate(URLDecoder.decode(request.getRequestURI(), UTF_8) + ".ftlh");
         } catch (TemplateNotFoundException ignored) {
+            //TODO: do normal soft redirect (fixed)
             if (request.getRequestURI().equals("/")) {
-                template = cfg.getTemplate("/index.ftlh");
+                response.sendRedirect("/index");
             } else {
-                template = cfg.getTemplate("/404.ftlh");
+                response.sendRedirect("/404");
             }
+            return;
         }
 
         Map<String, Object> data = getData(request);
@@ -73,6 +75,7 @@ public class FreemarkerServlet extends HttpServlet {
                         Long val = Long.parseLong(e.getValue()[0]);
                         data.put(e.getKey(), val);
                     } catch (NumberFormatException exception) {
+                        System.out.println(e.getKey());
                         data.put(e.getKey(), e.getValue()[0]);
                     }
                 } else {

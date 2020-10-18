@@ -16,7 +16,7 @@
                     <li>id: ${u.id}</li>
                     <li>handle: ${u.handle}</li>
                     <li>name: ${u.name}</li>
-                    <li>posts: <a href="/post?user_id=${u.id}">${c.countPosts(u)}</a></li>
+                    <li>posts: <a href="/posts?user_id=${u.id}">${c.countPosts(u)}</a></li>
                 </ul>
             </div>
             <div class="arrows">

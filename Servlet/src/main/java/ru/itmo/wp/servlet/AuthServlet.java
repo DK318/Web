@@ -10,8 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class AuthServlet extends HttpServlet {
-
-    private ArrayList<Message> messages = new ArrayList<>();
+    private final ArrayList<Message> messages = new ArrayList<>();
 
     private void makeResponse(HttpServletResponse response, Object object) throws IOException {
         String json = new Gson().toJson(object);
@@ -38,19 +37,28 @@ public class AuthServlet extends HttpServlet {
                 makeResponse(response, name);
                 break;
             case "/message/findAll":
-                makeResponse(response, messages);
-                break;
+                synchronized (messages) {
+                    makeResponse(response, messages);
+                    break;
+                }
             case "/message/add":
-                String user = (String) session.getAttribute("user");
-                String text = request.getParameter("text");
-                messages.add(new Message(user, text));
-                break;
+                if (session.getAttribute("user") != null) {
+                    synchronized (messages) {
+                        //TODO: fixed
+                        String user = (String) session.getAttribute("user");
+                        String text = request.getParameter("text");
+                        messages.add(new Message(user, text));
+                        break;
+                    }
+                } else {
+                    response.sendError(HttpServletResponse.SC_FORBIDDEN);
+                }
         }
     }
 
-    private class Message {
-        private String user;
-        private String text;
+    private static class Message {
+        private final String user;
+        private final String text;
 
         public Message(String user, String text) {
             this.user = user;

@@ -28,11 +28,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b10b8b0f-485d-46a6-bc66-7aeeafd2ef8a" name="Default Changelist" comment="Updated pathname">
+      <change beforePath="$PROJECT_DIR$/../Layout/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Layout/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/servlet/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/servlet/AuthServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/servlet/StaticServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/servlet/StaticServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/AuthServlet$Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/AuthServlet$Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/AuthServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/StaticServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/StaticServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wp31/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/wp31/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/AuthServlet$Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/AuthServlet$Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/AuthServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/StaticServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/StaticServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wp31/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/wp31/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/util/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/model/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/util/DataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/util/DataUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/web/FreemarkerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/web/FreemarkerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/webapp/WEB-INF/templates/post.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/webapp/WEB-INF/templates/post.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/webapp/WEB-INF/templates/user.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/webapp/WEB-INF/templates/user.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/webapp/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/webapp/css/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/util/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/util/DataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/util/DataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/web/FreemarkerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/web/FreemarkerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/util/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/util/DataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/util/DataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/web/FreemarkerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/web/FreemarkerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/templates/post.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/templates/post.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/templates/user.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/templates/user.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/css/table.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,28 +109,17 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Home\Desktop\Сервлет\src\main\webapp\static\jsp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestsB">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.ServletHomework">
     <configuration name="TestsA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wp31" />
       <option name="PACKAGE_NAME" value="" />
@@ -290,8 +304,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestsB" />
-        <item itemvalue="JUnit.TestsA" />
         <item itemvalue="JUnit.TestsA.testReload" />
+        <item itemvalue="JUnit.TestsA" />
       </list>
     </recent_temporary>
   </component>
@@ -318,6 +332,15 @@
       <workItem from="1601584222766" duration="222000" />
       <workItem from="1601634859663" duration="281000" />
       <workItem from="1601641889855" duration="3668000" />
+      <workItem from="1601729986580" duration="1320000" />
+      <workItem from="1601745822087" duration="344000" />
+      <workItem from="1602184721946" duration="2007000" />
+      <workItem from="1602190511136" duration="125000" />
+      <workItem from="1602196411182" duration="1123000" />
+      <workItem from="1602251471069" duration="6382000" />
+      <workItem from="1602973484795" duration="884000" />
+      <workItem from="1602976391107" duration="1921000" />
+      <workItem from="1603017588160" duration="612000" />
     </task>
     <task id="LOCAL-00001" summary="Updated pathname">
       <created>1601327261965</created>
@@ -349,74 +372,95 @@
     <option name="LAST_COMMIT_MESSAGE" value="Updated pathname" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="100" key="#Project_Structure" timestamp="1601326501534">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="555" y="199" width="800" height="715" key="#Plugins" timestamp="1601745799697">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="555" y="199" width="800" height="715" key="#Plugins/0.30.1920.1050@0.30.1920.1050" timestamp="1601745799697" />
+    <state x="448" y="131" width="1024" height="848" key="#Project_Structure" timestamp="1601730260339">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="448" y="100" key="#Project_Structure/0.0.1920.1044@0.0.1920.1044" timestamp="1601326501534" />
-    <state x="740" y="415" key="#Tomcat_Server" timestamp="1601326026853">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="448" y="131" width="1024" height="848" key="#Project_Structure/0.30.1920.1050@0.30.1920.1050" timestamp="1601730260339" />
+    <state x="740" y="447" width="432" height="243" key="#Tomcat_Server" timestamp="1601730226398">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="740" y="415" key="#Tomcat_Server/0.0.1920.1044@0.0.1920.1044" timestamp="1601326026853" />
-    <state x="424" y="180" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601469839475">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="740" y="447" width="432" height="243" key="#Tomcat_Server/0.30.1920.1050@0.30.1920.1050" timestamp="1601730226398" />
+    <state x="424" y="211" width="1071" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601730229911">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="424" y="180" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1601469839475" />
-    <state x="747" y="278" key="FileChooserDialogImpl" timestamp="1601328438997">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="424" y="211" width="1071" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1601730229911" />
+    <state x="747" y="310" width="424" height="515" key="FileChooserDialogImpl" timestamp="1601750284148">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="747" y="278" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1601328438997" />
-    <state width="1874" height="266" key="GridCell.Tab.0.bottom" timestamp="1601642935721">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="747" y="310" width="424" height="515" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1601750284148" />
+    <state width="1874" height="267" key="GridCell.Tab.0.bottom" timestamp="1602259797911">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1874" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1601642935721" />
-    <state width="1874" height="266" key="GridCell.Tab.0.center" timestamp="1601642935720">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1874" height="267" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797911" />
+    <state width="1874" height="267" key="GridCell.Tab.0.center" timestamp="1602259797911">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1874" height="266" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1601642935720" />
-    <state width="1874" height="266" key="GridCell.Tab.0.left" timestamp="1601642935719">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1874" height="267" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797911" />
+    <state width="1874" height="267" key="GridCell.Tab.0.left" timestamp="1602259797910">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1874" height="266" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1601642935719" />
-    <state width="1874" height="266" key="GridCell.Tab.0.right" timestamp="1601642935720">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1874" height="267" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797910" />
+    <state width="1874" height="267" key="GridCell.Tab.0.right" timestamp="1602259797911">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1874" height="266" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1601642935720" />
-    <state width="1291" height="266" key="GridCell.Tab.1.bottom" timestamp="1601642923331">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1874" height="267" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797911" />
+    <state width="1291" height="267" key="GridCell.Tab.1.bottom" timestamp="1602259797902">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1291" height="266" key="GridCell.Tab.1.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1601642923331" />
-    <state width="1291" height="266" key="GridCell.Tab.1.center" timestamp="1601642923330">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1291" height="267" key="GridCell.Tab.1.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797902" />
+    <state width="1291" height="267" key="GridCell.Tab.1.center" timestamp="1602259797902">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1291" height="266" key="GridCell.Tab.1.center/0.0.1920.1044@0.0.1920.1044" timestamp="1601642923330" />
-    <state width="1291" height="266" key="GridCell.Tab.1.left" timestamp="1601642923330">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1291" height="267" key="GridCell.Tab.1.center/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797902" />
+    <state width="1291" height="267" key="GridCell.Tab.1.left" timestamp="1602259797901">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1291" height="266" key="GridCell.Tab.1.left/0.0.1920.1044@0.0.1920.1044" timestamp="1601642923330" />
-    <state width="1291" height="266" key="GridCell.Tab.1.right" timestamp="1601642923331">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1291" height="267" key="GridCell.Tab.1.left/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797901" />
+    <state width="1291" height="267" key="GridCell.Tab.1.right" timestamp="1602259797902">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1291" height="266" key="GridCell.Tab.1.right/0.0.1920.1044@0.0.1920.1044" timestamp="1601642923331" />
-    <state width="1291" height="266" key="GridCell.Tab.2.bottom" timestamp="1601642923332">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1291" height="267" key="GridCell.Tab.1.right/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797902" />
+    <state width="1291" height="267" key="GridCell.Tab.2.bottom" timestamp="1602259797903">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1291" height="266" key="GridCell.Tab.2.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1601642923332" />
-    <state width="1291" height="266" key="GridCell.Tab.2.center" timestamp="1601642923332">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1291" height="267" key="GridCell.Tab.2.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797903" />
+    <state width="1291" height="267" key="GridCell.Tab.2.center" timestamp="1602259797903">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1291" height="266" key="GridCell.Tab.2.center/0.0.1920.1044@0.0.1920.1044" timestamp="1601642923332" />
-    <state width="1291" height="266" key="GridCell.Tab.2.left" timestamp="1601642923331">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1291" height="267" key="GridCell.Tab.2.center/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797903" />
+    <state width="1291" height="267" key="GridCell.Tab.2.left" timestamp="1602259797902">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1291" height="266" key="GridCell.Tab.2.left/0.0.1920.1044@0.0.1920.1044" timestamp="1601642923331" />
-    <state width="1291" height="266" key="GridCell.Tab.2.right" timestamp="1601642923332">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1291" height="267" key="GridCell.Tab.2.left/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797902" />
+    <state width="1291" height="267" key="GridCell.Tab.2.right" timestamp="1602259797903">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1291" height="266" key="GridCell.Tab.2.right/0.0.1920.1044@0.0.1920.1044" timestamp="1601642923332" />
-    <state x="526" y="159" key="SettingsEditor" timestamp="1601327814563">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state width="1291" height="267" key="GridCell.Tab.2.right/0.30.1920.1050@0.30.1920.1050" timestamp="1602259797903" />
+    <state x="526" y="190" width="1024" height="848" key="SettingsEditor" timestamp="1601746072941">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="526" y="159" key="SettingsEditor/0.0.1920.1044@0.0.1920.1044" timestamp="1601327814563" />
+    <state x="526" y="190" width="1024" height="848" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1601746072941" />
     <state x="560" y="254" key="Vcs.Push.Dialog.v2" timestamp="1601327422846">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -433,6 +477,10 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="624" y="238" key="run.anything.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1601645450668" />
+    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup" timestamp="1601745747857">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1601745747857" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
