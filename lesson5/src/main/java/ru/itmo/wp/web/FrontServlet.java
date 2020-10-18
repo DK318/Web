@@ -147,16 +147,18 @@ public class FrontServlet extends HttpServlet {
         if (language == null) {
             language = (String) session.getAttribute("lang");
         }
-        if (language == null) {
-            language = "";
-        }
 
-        System.out.println("Map: ");
-        for (Map.Entry<String, String[]> entry : request.getParameterMap().entrySet()) {
-            System.out.println(entry.getKey() + " " + Arrays.toString(entry.getValue()));
+        Template template = null;
+        if (language != null) {
+            try {
+                template = newTemplate(pageClass.getSimpleName() + "_" + language + ".ftlh");
+            } catch (ServletException e) {
+                // No operations.
+            }
         }
-
-        Template template = newTemplate(pageClass.getSimpleName(), language);
+        if (template == null) {
+            template = newTemplate(pageClass.getSimpleName() + ".ftlh");
+        }
         response.setContentType("text/html");
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());
         try {
@@ -166,42 +168,29 @@ public class FrontServlet extends HttpServlet {
         }
     }
 
-    private Template newTemplate(String templateName, String language) throws ServletException {
+    private Template newTemplate(String templateName) throws ServletException {
         Template template = null;
 
-        String languageTemplateName = templateName + "_" + language + ".ftlh";
-        templateName += ".ftlh";
-
-        if (sourceConfiguration != null) {
-            template = getTemplate(templateName, languageTemplateName, sourceConfiguration);
+        try {
+            template = sourceConfiguration.getTemplate(templateName);
+        } catch (TemplateNotFoundException ignored) {
+            // No operations.
+        } catch (IOException e) {
+            throw new ServletException("Can't load template [templateName=" + templateName + "]", e);
         }
 
-        if (template == null && targetConfiguration != null) {
-            template = getTemplate(templateName, languageTemplateName, targetConfiguration);
+        try {
+            template = targetConfiguration.getTemplate(templateName);
+        } catch (TemplateNotFoundException ignored) {
+            // No operations.
+        } catch (IOException e) {
+            throw new ServletException("Can't load template [templateName=" + templateName + "]", e);
         }
 
         if (template == null) {
             throw new ServletException("Can't find template [templateName=" + templateName + "]");
         }
 
-        return template;
-    }
-
-    private Template getTemplate(String templateName, String languageTemplateName, Configuration sourceConfiguration) throws ServletException {
-        Template template = null;
-        try {
-            template = sourceConfiguration.getTemplate(languageTemplateName);
-        } catch (TemplateNotFoundException ignored) {
-            try {
-                template = sourceConfiguration.getTemplate(templateName);
-            } catch (TemplateNotFoundException ignored2) {
-                // No operations.
-            } catch (IOException e) {
-                throw new ServletException("Can't load template [templateName=" + templateName + "]", e);
-            }
-        } catch (IOException e) {
-            throw new ServletException("Can't load template [templateName=" + templateName + "]", e);
-        }
         return template;
     }
 
