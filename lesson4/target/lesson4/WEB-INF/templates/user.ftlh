@@ -3,6 +3,7 @@
 <#import "./common.ftlh" as c>
 
 <@c.page>
+    ${users[0]}
     <#if handle??>
         <#assign u = c.findBy(users, "handle", handle)!/>
     <#elseif user_id?? && user_id?is_number>

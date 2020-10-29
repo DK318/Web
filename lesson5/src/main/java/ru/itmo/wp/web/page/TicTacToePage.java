@@ -51,20 +51,20 @@ public class TicTacToePage {
 
     private boolean checkDraw(State state) {
         int cnt = 0;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < state.getSize(); i++) {
+            for (int j = 0; j < state.getSize(); j++) {
                 if (state.cells[i][j] != null) {
                     cnt++;
                 }
             }
         }
-        return cnt == 9;
+        return cnt == state.getSize() * state.getSize();
     }
 
     private boolean checkWin(State state, int row, int col) {
         String mark = (state.crossesMove ? "X" : "O");
         int cntRow = 0, cntCol = 0, cntDiag = 0, cntRDiag = 0;
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < state.getSize(); i++) {
             if (state.cells[row][i] != null && state.cells[row][i].equals(mark)) {
                 cntCol++;
             }
@@ -74,15 +74,16 @@ public class TicTacToePage {
             if (state.cells[i][i] != null && state.cells[i][i].equals(mark)) {
                 cntDiag++;
             }
-            if (state.cells[i][2 - i] != null && state.cells[i][2 - i].equals(mark)) {
+            if (state.cells[i][state.getSize() - 1 - i] != null && state.cells[i][state.getSize() - 1 - i].equals(mark)) {
                 cntRDiag++;
             }
         }
-        return cntCol == 3 || cntRow == 3 || cntDiag == 3 || cntRDiag == 3;
+        return cntCol == state.getSize() || cntRow == state.getSize() ||
+                cntDiag == state.getSize() || cntRDiag == state.getSize();
     }
 
     public static class State {
-        public String[][] cells = new String[3][3];
+        public String[][] cells = new String[4][4];
         public String phase = "RUNNING";
         public boolean crossesMove = true;
 

@@ -28,36 +28,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b10b8b0f-485d-46a6-bc66-7aeeafd2ef8a" name="Default Changelist" comment="Updated pathname">
-      <change beforePath="$PROJECT_DIR$/../Layout/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Layout/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/servlet/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/servlet/AuthServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/servlet/StaticServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/wp/servlet/StaticServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/AuthServlet$Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/AuthServlet$Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/AuthServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/StaticServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itmo/wp/servlet/StaticServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/AuthServlet$Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/AuthServlet$Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/AuthServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/StaticServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wp31/WEB-INF/classes/ru/itmo/wp/servlet/StaticServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wp31/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/wp31/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/util/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/model/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/util/DataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/util/DataUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/web/FreemarkerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/java/ru/itmo/web/lesson4/web/FreemarkerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/webapp/WEB-INF/templates/post.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/webapp/WEB-INF/templates/post.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/webapp/WEB-INF/templates/user.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/webapp/WEB-INF/templates/user.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/src/main/webapp/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/src/main/webapp/css/table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/util/Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/util/DataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/util/DataUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/web/FreemarkerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/classes/ru/itmo/web/lesson4/web/FreemarkerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/util/Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/util/DataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/util/DataUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/web/FreemarkerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/classes/ru/itmo/web/lesson4/web/FreemarkerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/templates/post.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/templates/post.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/templates/user.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/WEB-INF/templates/user.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson4/target/lesson4/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson4/target/lesson4/css/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson5/target/classes/ru/itmo/wp/web/FrontServlet$Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson5/target/classes/ru/itmo/wp/web/FrontServlet$Route.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson5/target/classes/ru/itmo/wp/web/FrontServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson5/target/classes/ru/itmo/wp/web/FrontServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson5/target/lesson5/WEB-INF/classes/ru/itmo/wp/web/FrontServlet$Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson5/target/lesson5/WEB-INF/classes/ru/itmo/wp/web/FrontServlet$Route.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson5/target/lesson5/WEB-INF/classes/ru/itmo/wp/web/FrontServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson5/target/lesson5/WEB-INF/classes/ru/itmo/wp/web/FrontServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,6 +316,7 @@
       <workItem from="1602973484795" duration="884000" />
       <workItem from="1602976391107" duration="1921000" />
       <workItem from="1603017588160" duration="612000" />
+      <workItem from="1603377297108" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Updated pathname">
       <created>1601327261965</created>
