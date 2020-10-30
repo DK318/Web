@@ -10,7 +10,6 @@ import java.util.Map;
 
 @SuppressWarnings({"unused", "RedundantSuppression"})
 public class RegisterPage extends Page {
-    private final UserService userService = new UserService();
 
     private void register(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
         User user = new User();

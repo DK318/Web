@@ -8,7 +8,9 @@ import ru.itmo.wp.model.repository.UserRepository;
 import ru.itmo.wp.model.repository.impl.UserRepositoryImpl;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 /** @noinspection UnstableApiUsage*/
 public class UserService {
@@ -32,7 +34,7 @@ public class UserService {
         if (Strings.isNullOrEmpty(user.getEmail())) {
             throw new ValidationException("Email is required");
         }
-        if(!user.getEmail().contains("@")) {
+        if(user.getEmail().chars().filter(ch -> ch == '@').count() != 1) {
             throw new ValidationException("Email must be correct");
         }
         if (userRepository.findByEmail(user.getEmail()) != null) {

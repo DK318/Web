@@ -35,7 +35,7 @@ public class TalksPage extends Page {
         try {
             targetId = userService.findByLogin(receiverLogin).getId();
         } catch (NullPointerException e) {
-            throw new ValidationException("You should pick user");
+            throw new ValidationException("You should pick a user");
         }
 
         Talk talk = new Talk();

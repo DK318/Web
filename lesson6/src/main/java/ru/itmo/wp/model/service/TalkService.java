@@ -15,6 +15,9 @@ public class TalkService {
         if (Strings.isNullOrEmpty(talk.getText())) {
             throw new ValidationException("Text can't be empty");
         }
+        if (talk.getText().length() > 300) {
+            throw new ValidationException("Text length must be less than 300 characters");
+        }
     }
 
     public List<Talk> findAllByUserId(long userId) {
