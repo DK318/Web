@@ -8,9 +8,7 @@ import ru.itmo.wp.model.repository.UserRepository;
 import ru.itmo.wp.model.repository.impl.UserRepositoryImpl;
 
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 /** @noinspection UnstableApiUsage*/
 public class UserService {

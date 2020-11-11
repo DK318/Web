@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="569c31eb-d412-430b-bfcc-d6366787f72a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Servlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servlet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson6/src/main/java/ru/itmo/wp/model/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Servlet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -81,6 +81,7 @@
       <workItem from="1601139410341" duration="100000" />
       <workItem from="1602187782336" duration="3489000" />
       <workItem from="1602251352402" duration="110000" />
+      <workItem from="1604618603802" duration="1416000" />
     </task>
     <servers />
   </component>
