@@ -18,10 +18,10 @@ public class Tag {
     @NotNull
     @NotBlank
     @NotEmpty
-    @Size(min = 3, max = 20)
+    @Size(min = 1, max = 20)
     private String name;
 
-    public Tag(@NotNull @NotBlank @NotEmpty @Size(min = 3, max = 20) String name) {
+    public Tag(@NotNull @NotBlank @NotEmpty @Size(min = 1, max = 20) String name) {
         this.name = name;
     }
 

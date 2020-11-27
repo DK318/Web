@@ -16,6 +16,10 @@ main article .tags {
     color: #888;
 }
 
+main article .tags img {
+    vertical-align: middle;
+}
+
 main article .body {
     border-left: 4px solid var(--border-color);
     padding-left: 0.75rem;

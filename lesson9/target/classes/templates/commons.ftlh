@@ -91,10 +91,13 @@
     <article>
         <div class="title">${post.title}</div>
         <div class="information">By ${post.user.login}, ${post.creationTime}</div>
-        <#if post.tags?size != 0>
-            <div class="tags">Tags: <#list post.tags as tag>${tag.name} </#list></div>
-        </#if>
         <div class="body">${post.text}</div>
+        <#if post.tags?size != 0>
+            <div class="tags">
+                <img src="<@spring.url '/img/tags.png'/>" title="Tags" alt="Tags"/>
+                <#list post.tags as tag>${tag.name} </#list>
+            </div>
+        </#if>
         <div class="footer">
             <div class="left">
                 <img src="<@spring.url '/img/voteup.png'/>" title="Vote Up" alt="Vote Up"/>

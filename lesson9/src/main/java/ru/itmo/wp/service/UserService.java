@@ -14,6 +14,8 @@ import ru.itmo.wp.repository.UserRepository;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 public class UserService {
@@ -61,29 +63,24 @@ public class UserService {
     }
 
     public void writePost(User user, PostForm postForm) {
-        String[] tagArray = null;
-
-        String tags = postForm.getTags();
-        if (tags != null && !tags.isEmpty()) {
-            tagArray = tags.split(" ");
-        }
+        Set<String> tagStrings = Stream.of(postForm.getTags().split(" "))
+                .map(String::new)
+                .collect(Collectors.toSet());
 
         Post post = new Post();
         post.setTitle(postForm.getTitle());
         post.setText(postForm.getText());
 
-        if (tagArray != null) {
-            Set<Tag> tagSet = new HashSet<>();
-            for (String tag : tagArray) {
-                if (tagRepository.countByName(tag) == 0) {
-                    tagRepository.save(new Tag(tag));
-                }
-
-                Tag tagEntity = tagRepository.findByName(tag);
-                tagSet.add(tagEntity);
+        Set<Tag> tagSet = new HashSet<>();
+        for (String tag : tagStrings) {
+            if (tagRepository.countByName(tag) == 0) {
+                tagRepository.save(new Tag(tag));
             }
-            post.setTags(tagSet);
+
+            Tag tagEntity = tagRepository.findByName(tag);
+            tagSet.add(tagEntity);
         }
+        post.setTags(tagSet);
 
         user.addPost(post);
         userRepository.save(user);

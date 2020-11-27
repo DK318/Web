@@ -2,6 +2,7 @@ package ru.itmo.wp.form;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class PostForm {
@@ -10,6 +11,7 @@ public class PostForm {
     @Size(min = 1, max = 60)
     private String title;
 
+    @Pattern(regexp = "[a-zA-Z\\s]*", message = "Tags must contain only Latin letters separated by whitespaces")
     private String tags;
 
     @NotNull
