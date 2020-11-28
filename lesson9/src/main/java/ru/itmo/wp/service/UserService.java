@@ -11,9 +11,7 @@ import ru.itmo.wp.repository.RoleRepository;
 import ru.itmo.wp.repository.TagRepository;
 import ru.itmo.wp.repository.UserRepository;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -63,18 +61,24 @@ public class UserService {
     }
 
     public void writePost(User user, PostForm postForm) {
-        Set<String> tagStrings = Stream.of(postForm.getTags().split(" "))
+        Set<String> tagStrings = Stream.of(postForm.getTags().split("\\s"))
                 .map(String::new)
+                .map(String::toLowerCase)
+                .filter(elem -> !elem.equals(""))
                 .collect(Collectors.toSet());
 
         Post post = new Post();
         post.setTitle(postForm.getTitle());
         post.setText(postForm.getText());
 
-        Set<Tag> tagSet = new HashSet<>();
+        SortedSet<Tag> tagSet = new TreeSet<>();
         for (String tag : tagStrings) {
             if (tagRepository.countByName(tag) == 0) {
-                tagRepository.save(new Tag(tag));
+                try {
+                    tagRepository.save(new Tag(tag));
+                } catch (Exception e) {
+                    // No operations.
+                }
             }
 
             Tag tagEntity = tagRepository.findByName(tag);

@@ -10,7 +10,7 @@ import javax.validation.constraints.Size;
 @Table(
         uniqueConstraints = @UniqueConstraint(columnNames = "name")
 )
-public class Tag {
+public class Tag implements Comparable<Tag> {
     @Id
     @GeneratedValue
     private long id;
@@ -42,5 +42,10 @@ public class Tag {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int compareTo(Tag tag) {
+        return tag.name.compareTo(getName());
     }
 }

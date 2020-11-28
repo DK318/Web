@@ -17,7 +17,7 @@ public class Comment {
     @NotNull
     @NotEmpty
     @NotBlank
-    @Size(min = 5, max = 250)
+    @Size(min = 1, max = 250)
     private String text;
 
     @ManyToOne

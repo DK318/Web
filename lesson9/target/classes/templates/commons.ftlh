@@ -89,7 +89,7 @@
 <#macro post post>
 <#-- @ftlvariable name="post" type="ru.itmo.wp.domain.Post" -->
     <article>
-        <div class="title">${post.title}</div>
+        <div class="title"><a href="/post/${post.id}/">${post.title}</a></div>
         <div class="information">By ${post.user.login}, ${post.creationTime}</div>
         <div class="body">${post.text}</div>
         <#if post.tags?size != 0>
@@ -108,7 +108,7 @@
                 <img src="<@spring.url '/img/date_16x16.png'/>" title="Publish Time" alt="Publish Time"/>
                 ${post.creationTime}
                 <img src="<@spring.url '/img/comments_16x16.png'/>" title="Comments" alt="Comments"/>
-                <a href="/post/${post.id}">${post.comments?size}</a>
+                <a href="/post/${post.id}/">${post.comments?size}</a>
             </div>
         </div>
     </article>

@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
+import java.util.SortedSet;
 
 /** @noinspection unused*/
 @Entity
@@ -41,7 +41,8 @@ public class Post {
             joinColumns = @JoinColumn(name = "post_id"),
             inverseJoinColumns = @JoinColumn(name = "tag_id")
     )
-    private Set<Tag> tags;
+    @OrderBy("name ASC")
+    private SortedSet<Tag> tags;
 
     @CreationTimestamp
     private Date creationTime;
@@ -86,11 +87,11 @@ public class Post {
         this.comments = comments;
     }
 
-    public Set<Tag> getTags() {
+    public SortedSet<Tag> getTags() {
         return tags;
     }
 
-    public void setTags(Set<Tag> tags) {
+    public void setTags(SortedSet<Tag> tags) {
         this.tags = tags;
     }
 
