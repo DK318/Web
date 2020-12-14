@@ -56,5 +56,16 @@ export default {
         6: {id: 6, userId: 5, postId: 5, text: "I hope"},
         8: {id: 8, userId: 11, postId: 8, text: "Please, write about TopCoder SRM 737"},
         9: {id: 9, userId: 7, postId: 8, text: "I'll do"}
+    },
+
+    getCommentCount: function() {
+        let commentCount = [];
+        Object.keys(this.posts).forEach(i => commentCount.push({
+            postId: parseInt(i),
+            count: Object.values(this.comments)
+                .filter(comment => comment.postId === parseInt(i))
+                .length
+        }));
+        return commentCount;
     }
 }

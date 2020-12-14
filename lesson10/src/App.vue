@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <Header :userId="userId" :users="users"/>
-        <Middle :users="users" :posts="posts" :comments="comments"/>
+        <Middle :users="users" :posts="posts"/>
         <Footer :usersCount="Object.keys(users).length" :postsCount="Object.keys(posts).length"/>
     </div>
 </template>

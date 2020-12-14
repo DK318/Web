@@ -11,7 +11,7 @@
     </div>
     <div class="right">
       <img src="../../../assets/img/comments_16x16.png" title="Comments" alt="Comments"/>
-      <a href="#">{{ commentsCount }}</a>
+      <a href="#">{{ getCommentsCount }}</a>
     </div>
   </div>
     <Comments v-if="showComments" :users="users" :comments="getComments"/>
@@ -23,13 +23,13 @@ import Comments from "@/components/middle/post/comments/Comments";
 export default {
   name: "Post",
   components: {Comments},
-  props: ["post", "users", "comments", "showComments"],
+  props: ["post", "users", "comments", "showComments", "commentsCount"],
   computed: {
-    commentsCount: function () {
-      return Object.values(this.comments).filter(comment => comment.postId === this.post.id).length;
-    },
     getComments: function () {
       return Object.values(this.comments).filter(comment => comment.postId === this.post.id);
+    },
+    getCommentsCount: function () {
+      return (this.commentsCount ? this.commentsCount[0].count : 0);
     }
   },
   methods: {

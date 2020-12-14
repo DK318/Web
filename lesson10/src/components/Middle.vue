@@ -2,13 +2,13 @@
     <div class="middle">
         <Sidebar :posts="viewPosts"/>
         <main>
-            <Index v-if="page === 'Index'" :posts="postsReverseOrder" :users="users" :comments="comments"/>
+            <Index v-if="page === 'Index'" :posts="postsReverseOrder" :users="users" :commentCount="getCommentCount"/>
             <Enter v-if="page === 'Enter'"/>
             <WritePost v-if="page === 'WritePost'"/>
             <EditPost v-if="page === 'EditPost'"/>
             <Register v-if="page === 'Register'"/>
             <Users v-if="page === 'Users'" :users="users"/>
-            <Post v-if="page === 'Post'" :post="post" :users="users" :comments="comments" :showComments="true"/>
+            <Post v-if="page === 'Post'" :post="post" :users="users" :comments="getComments()" :showComments="true" :commentsCount="countPostComments()"/>
         </main>
     </div>
 </template>
@@ -41,20 +41,32 @@ export default {
         Sidebar,
         EditPost
     },
-    props: ["users", "posts", "comments"],
+    props: ["users", "posts"],
     computed: {
         viewPosts: function () {
             return Object.values(this.posts).sort((a, b) => b.id - a.id).slice(0, 2);
         },
         postsReverseOrder: function () {
           return Object.values(this.posts).sort((a, b) => b.id - a.id);
+        },
+        getCommentCount: function () {
+          return this.$root.$data.getCommentCount();
         }
-    }, beforeCreate() {
+    },
+    beforeCreate() {
         this.$root.$on("onChangePage", (page) => this.page = page)
         this.$root.$on("showPost", (post) => {
           this.post = post;
           this.page = "Post";
         })
+    },
+    methods: {
+      countPostComments: function () {
+        return this.$root.$data.getCommentCount().filter(count => this.post.id === count.postId);
+      },
+      getComments: function () {
+        return this.$root.$data.comments;
+      }
     }
 }
 </script>
