@@ -1,14 +1,13 @@
 package ru.itmo.wp.controller;
 
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import ru.itmo.wp.domain.Post;
 import ru.itmo.wp.domain.User;
 import ru.itmo.wp.exception.BadIdException;
+import ru.itmo.wp.exception.BadJwtException;
 import ru.itmo.wp.exception.ValidationException;
 import ru.itmo.wp.form.PostForm;
-import ru.itmo.wp.form.validator.PostFormValidator;
 import ru.itmo.wp.service.JwtService;
 import ru.itmo.wp.service.PostService;
 
@@ -19,16 +18,11 @@ import java.util.List;
 @RequestMapping("/api/1")
 public class PostController extends ApiController {
     private final PostService postService;
-    private final PostFormValidator postFormValidator;
+    private final JwtService jwtService;
 
-    public PostController(PostService postService, PostFormValidator postFormValidator) {
+    public PostController(PostService postService, JwtService jwtService) {
         this.postService = postService;
-        this.postFormValidator = postFormValidator;
-    }
-
-    @InitBinder("postForm")
-    public void initBinder(WebDataBinder binder) {
-        binder.addValidators(postFormValidator);
+        this.jwtService = jwtService;
     }
 
     @GetMapping("posts")
@@ -51,6 +45,11 @@ public class PostController extends ApiController {
             throw new ValidationException(bindingResult);
         }
 
-        postService.createPost(postForm);
+        User user = jwtService.find(postForm.getJwt());
+        if (user == null) {
+            throw new BadJwtException("User not found");
+        }
+
+        postService.createPost(postForm, user);
     }
 }

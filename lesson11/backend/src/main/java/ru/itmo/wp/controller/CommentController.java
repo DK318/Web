@@ -1,14 +1,15 @@
 package ru.itmo.wp.controller;
 
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import ru.itmo.wp.domain.Comment;
+import ru.itmo.wp.domain.User;
 import ru.itmo.wp.exception.BadIdException;
+import ru.itmo.wp.exception.BadJwtException;
 import ru.itmo.wp.exception.ValidationException;
 import ru.itmo.wp.form.CommentForm;
-import ru.itmo.wp.form.validator.CommentFormValidator;
 import ru.itmo.wp.service.CommentService;
+import ru.itmo.wp.service.JwtService;
 import ru.itmo.wp.service.PostService;
 
 import javax.validation.Valid;
@@ -19,17 +20,12 @@ import java.util.List;
 public class CommentController {
     private final CommentService commentService;
     private final PostService postService;
-    private final CommentFormValidator commentFormValidator;
+    private final JwtService jwtService;
 
-    public CommentController(CommentService commentService, PostService postService, CommentFormValidator commentFormValidator) {
+    public CommentController(CommentService commentService, PostService postService, JwtService jwtService) {
         this.commentService = commentService;
         this.postService = postService;
-        this.commentFormValidator = commentFormValidator;
-    }
-
-    @InitBinder("commentForm")
-    public void initBinder(WebDataBinder binder) {
-        binder.addValidators(commentFormValidator);
+        this.jwtService = jwtService;
     }
 
     @GetMapping("comments")
@@ -47,6 +43,11 @@ public class CommentController {
                            @PathVariable String id) {
         if (bindingResult.hasErrors()) {
             throw new ValidationException(bindingResult);
+        }
+
+        User user = jwtService.find(commentForm.getJwt());
+        if (user == null) {
+            throw new BadJwtException("User not found");
         }
 
         try {

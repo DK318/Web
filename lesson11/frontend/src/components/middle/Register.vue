@@ -1,6 +1,6 @@
 <template>
   <div class="enter form-box">
-    <div class="header">Enter</div>
+    <div class="header">Register</div>
     <div class="body">
       <form @submit.prevent="onRegister">
         <div class="field">
@@ -29,7 +29,7 @@
         </div>
         <div class="field error">{{ error }}</div>
         <div class="button-field">
-          <input type="submit" value="Enter">
+          <input type="submit" value="Register">
         </div>
       </form>
     </div>
